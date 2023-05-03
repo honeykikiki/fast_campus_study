@@ -561,6 +561,61 @@ let hello1 = "false";
 let hello2 = false;
 hello1 = "true";
 console.log(hello1);
+// 문자
+let str;
+// 숫자
+let num;
+// 불린
+let bool;
+// null / undefined
+let nul;
+let und;
+nul = null;
+console.log(nul);
+console.log(und);
+// 배열
+let fruits = [
+    "apple",
+    "banana"
+];
+let union = [
+    1,
+    2,
+    "삼"
+];
+let array = [
+    1,
+    2
+];
+// 객체
+let obj = {
+    1: "1",
+    "2": 2
+};
+let arr = [
+    "1",
+    "2"
+];
+const userA = {
+    name: "seongjin",
+    age: 3,
+    isValid: false
+};
+const userB = {
+    name: "seongjin",
+    age: 3,
+    isValid: false
+};
+// 함수
+const add = function name(x, y) {
+    return x + y;
+};
+const hello = function name() {
+    return document.createElement("h1");
+};
+function int(x) {
+    return x;
+} //
 
 },{}]},["cnpQZ","jeorp"], "jeorp", "parcelRequire477f")
 
