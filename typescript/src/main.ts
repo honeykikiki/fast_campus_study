@@ -63,5 +63,23 @@ function int(x: number) :number {
 }
 
 //
+const tuple: [string, number, boolean] = ['a', 1, false];
+const users: [string, number, boolean][] = [['a', 1, false]];
+
+// void
+function helloTwo(params: String): void {
+  
+}
+//Naver
+const nev: number[] = [];
+nev.push(1);
+
+// union
+let union2: string | number [] = '';
 
 
+// intersetion
+interface User {
+  // name: string,
+  age: number
+}

@@ -615,7 +615,27 @@ const hello = function name() {
 };
 function int(x) {
     return x;
-} //
+}
+//
+const tuple = [
+    "a",
+    1,
+    false
+];
+const users = [
+    [
+        "a",
+        1,
+        false
+    ]
+];
+// void
+function helloTwo(params) {}
+//Naver
+const nev = [];
+nev.push(1);
+// union
+let union2 = "";
 
 },{}]},["cnpQZ","jeorp"], "jeorp", "parcelRequire477f")
 
