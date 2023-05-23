@@ -557,85 +557,94 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"jeorp":[function(require,module,exports) {
-let hello1 = "false";
-let hello2 = false;
-hello1 = "true";
-console.log(hello1);
-// 문자
-let str;
-// 숫자
-let num;
-// 불린
-let bool;
-// null / undefined
-let nul;
-let und;
-nul = null;
-console.log(nul);
-console.log(und);
-// 배열
-let fruits = [
-    "apple",
-    "banana"
-];
-let union = [
-    1,
-    2,
-    "삼"
-];
-let array = [
-    1,
-    2
-];
-// 객체
-let obj = {
-    1: "1",
-    "2": 2
-};
-let arr = [
-    "1",
-    "2"
-];
-const userA = {
-    name: "seongjin",
-    age: 3,
-    isValid: false
-};
-const userB = {
-    name: "seongjin",
-    age: 3,
-    isValid: false
-};
-// 함수
-const add = function name(x, y) {
-    return x + y;
-};
-const hello = function name() {
-    return document.createElement("h1");
-};
-function int(x) {
-    return x;
+// 타입 단언
+// ex1
+const el = document.querySelector("body");
+el.textContent = "hello";
+// ex2
+function getNumber(x) {
+    return Number(x?.toFixed(2));
 }
+getNumber(3);
+getNumber(null);
+// ex3
+function getValue(x, isNumber) {
+    isNumber;
+// return x.toUpperCase();
+}
+getNumber(3);
+getNumber(null);
 //
-const tuple = [
-    "a",
-    1,
-    false
-];
-const users = [
-    [
-        "a",
-        1,
-        false
-    ]
-];
-// void
-function helloTwo(params) {}
-//Naver
-const nev = [];
-nev.push(1);
-// union
-let union2 = "";
+let num = 12;
+num = 15;
+function add(a, b = 2) {
+    return a + b;
+}
+num = add(1); // let hello1: String = 'false';
+ // let hello2: boolean = false;
+ // hello1 = 'true';
+ // console.log(hello1);
+ // // 문자
+ // let str: String;
+ // // 숫자
+ // let num: number;
+ // // 불린
+ // let bool: boolean;
+ // // null / undefined
+ // let nul: null;
+ // let und: undefined;
+ // nul = null;
+ // console.log(nul);
+ // console.log(und);
+ // // 배열
+ // let fruits: String[] = ['apple', 'banana'];
+ // let union: (String|number)[] = [1, 2, '삼'];
+ // let array: number[] = [1, 2];
+ // // 객체
+ // let obj: Object = {1: '1', '2': 2};
+ // let arr: Object = ['1', '2'];
+ // interface User { // 모델
+ //   name: String
+ //   age: number
+ //   isValid: boolean
+ // }
+ // const userA: User = {
+ //   name: 'seongjin',
+ //   age: 3,
+ //   isValid: false,
+ // }
+ // const userB: User = {
+ //   name: 'seongjin',
+ //   age: 3,
+ //   isValid: false,
+ // }
+ // // 함수
+ // const add: (x: number, y: number) => number 
+ // = function name(x: number, y: number): number {
+ //   return x + y;
+ // }
+ // const hello: () => void = function name() {
+ //   return document.createElement('h1');
+ // }
+ // function int(x: number) :number {
+ //   return x;
+ // }
+ // //
+ // const tuple: [string, number, boolean] = ['a', 1, false];
+ // const users: [string, number, boolean][] = [['a', 1, false]];
+ // // void
+ // function helloTwo(params: String): void {
+ // }
+ // //Naver
+ // const nev: number[] = [];
+ // nev.push(1);
+ // // union
+ // let union2: string | number [] = '';
+ // // intersetion
+ // interface User {
+ //   // name: string,
+ //   age: number
+ // }
 
 },{}]},["cnpQZ","jeorp"], "jeorp", "parcelRequire477f")
 
