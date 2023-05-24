@@ -557,13 +557,21 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"jeorp":[function(require,module,exports) {
+let num2;
+// num2 = 3;
+console.log(num2);
+function logText(el) {
+    console.log(el.textContent);
+}
+const h1El = document.querySelector("h1");
+if (h1El) logText(h1El);
 // 타입 단언
 // ex1
-const el = document.querySelector("body");
-el.textContent = "hello";
+const el = document.querySelector(".title");
+if (el) el.textContent = "hello";
 // ex2
 function getNumber(x) {
-    return Number(x?.toFixed(2));
+    if (x) return Number(x.toFixed(2));
 }
 getNumber(3);
 getNumber(null);
