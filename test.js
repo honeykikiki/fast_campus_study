@@ -7,7 +7,7 @@ class User {
     this.a = a;
   }
 
-  get() {
+  get() {KW
     console.log(a);
     console.log(this.a);
   }
@@ -18,3 +18,4 @@ let a = new User('asd');
 a.a
 
 a.get();
+as

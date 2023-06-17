@@ -6,9 +6,6 @@ const fruits: Fruits = ['apple', 'banana', 'melon']
 console.log(fruits[1]);
 
 
-
-
-
 interface Getname {
   (message: string): String,
 }
