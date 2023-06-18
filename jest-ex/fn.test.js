@@ -1,4 +1,4 @@
-const fn = require('./fn');
+import fn from './fn';
 
 // test('1은 1 이다', () => {
 //   expect(1).toBe(1);
@@ -47,7 +47,7 @@ const fn = require('./fn');
 // toBeGreaterThanOrEqual 크거나 같다
 // toBeLessThan 작다
 // toBeLessThanOrEqual 작거나 같다
-test('', () => {
+test('ID는 10자 이하여야 합니다.', () => {  const Id = "T"
   expect().toBeGreaterThan
   // expect().toBeGreaterThanOrEqual
   // expect().toBeLessThan
