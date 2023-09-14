@@ -3,27 +3,27 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: "eslint:recommended",
+  extends: 'eslint:recommended',
   overrides: [
     {
       env: {
         node: true,
       },
-      files: [".eslintrc.{js,cjs}"],
+      files: ['.eslintrc.{js,cjs}'],
       parserOptions: {
-        sourceType: "module",
+        sourceType: 'module',
       },
     },
   ],
   parserOptions: {
-    ecmaVersion: "latest",
-    sourceType: "module",
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
   rules: {
-    "no-unused-vars": 0, // 쓰지않는 변수 오류표시
+    'no-unused-vars': 0, // 쓰지않는 변수 오류표시
   },
   eslintConfig: {
-    extends: ["jest"],
+    extends: ['jest'],
   },
 };
 

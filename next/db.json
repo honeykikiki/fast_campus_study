@@ -1,0 +1,41 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typified"
+  },
+  "topic": [
+    {
+      "id": 1,
+      "title": "json-server1",
+      "body": "some topic1"
+    },
+    {
+      "id": 2,
+      "title": "json-server2",
+      "body": "some topic2"
+    },
+    {
+      "id": 3,
+      "title": "json-server3",
+      "body": "some topic3"
+    },
+    {
+      "id": 4,
+      "title": "json-server4",
+      "body": "some topic4"
+    }
+  ]
+}
